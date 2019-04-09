@@ -1,0 +1,40 @@
+/*index.html*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>chatroom</title>
+    <link type="text/css" rel="stylesheet" href="css/chat.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/socket.io.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
+</head>
+<body>
+    /*login*/
+    <div class="login-wrap">
+        <div class="login-con">
+            <h3>Login</h3>
+            <input type="text" placeholder="Your name" id="loginName">
+            <input type="text" placeholder="Your password" id="loginPassword">
+            <button class="login-btn">login</button>
+        </div>
+        <div class="NewUser-con">
+            <h3>NewUser</h3>
+            <input type="text" placeholder="Your name" id="NewName">
+            <input type="text" placeholder="Your password" id="NewPassword">
+            <button class="NewUser-btn">register</button>
+        </div>
+    </div>
+    
+    /*Chat Window*/
+    <div class="chat-wrap hide">
+        <h1>Let's Chat</h1>
+        <div class="chat-con clearfix"></div>
+        <div class="bottom">
+            <input type="text" id="sendtxt">
+            <button class="sendBtn">send</button>
+        </div>
+    </div>
+</body>
+</html>
